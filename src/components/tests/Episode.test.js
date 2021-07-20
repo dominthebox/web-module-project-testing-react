@@ -28,7 +28,7 @@ test("renders without error", () => {
 
 });
 
-test("renders the summury test passed as prop", ()=>{
+test("renders the summary test passed as prop", ()=>{
     render(<Episode episode={testEpisode} />);
     const summary = screen.queryByText(/this is a test for the summary/i);
     expect(summary).toBeInTheDocument();
